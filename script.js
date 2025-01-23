@@ -5,7 +5,7 @@ function main() {
     const row = document.createElement("div");
     row.classList.add("row");
 
-    for (let j = 0; j < side; i++) {
+    for (let j = 0; j < side; j++) {
       const grid = document.createElement("div");
       grid.classList.add("grid");
       row.appendChild(grid);
