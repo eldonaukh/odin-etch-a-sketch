@@ -13,6 +13,13 @@ function main() {
 
     container.appendChild(row);
   }
+
+  container.addEventListener("mouseover", (evt) => {
+    if (evt.target.className === "grid") {
+      console.log(evt.target.className);
+      evt.target.style.backgroundColor = "#000000";
+    }
+  });
 }
 
 main();
