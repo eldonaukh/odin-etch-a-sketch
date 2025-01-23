@@ -3,12 +3,15 @@ body {
 }
 
 .grid {
-  width: 20px;
-  height: 20px;
   background-color: white;
   border: 1px solid black;
 }
 
 .row {
   display: flex;
+}
+
+.container {
+  width: 960px;
+  margin: 20px;
 }
