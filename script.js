@@ -9,6 +9,7 @@ function main() {
         grid.classList.add("grid");
         grid.style.width = `${600 / side}px`;
         grid.style.height = `${600 / side}px`;
+        grid.style.opacity = 0;
         row.appendChild(grid);
       }
       container.appendChild(row);
@@ -22,7 +23,7 @@ function main() {
   const colorBtn = document.createElement("button");
   const currentSide = document.createElement("h2");
   document.body.insertBefore(topDiv, container);
-  pageTitle.innerText = "Etch-aSketch";
+  pageTitle.innerText = "Etch-a-Sketch";
   promptBtn.innerText = "Update side (1-100)";
   resetBtn.innerText = "Reset";
   colorBtn.innerText = "Change to random color";
@@ -52,7 +53,7 @@ function main() {
   });
   colorBtn.addEventListener("click", (evt) => {
     if (evt.target.innerText === "Change to random color") {
-      evt.target.innerText = "Change to Black";
+      evt.target.innerText = "Change to black";
       randomColor = true;
     } else {
       evt.target.innerText = "Change to random color";
@@ -70,6 +71,9 @@ function main() {
       } else {
         evt.target.style.backgroundColor = "#000000";
       }
+      evt.target.style.opacity = `${
+        parseFloat(evt.target.style.opacity) + 0.1
+      }`;
     }
   });
 }

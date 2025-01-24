@@ -1,10 +1,11 @@
 body {
   background-color: aliceblue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.grid {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .row {
@@ -15,6 +16,7 @@ body {
   width: 600px;
   height: 600px;
   margin-top: 20px;
+  background-color: white;
 }
 
 button {
