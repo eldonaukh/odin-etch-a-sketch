@@ -1,17 +1,33 @@
 body {
   background-color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .grid {
   background-color: white;
-  border: 1px solid black;
 }
 
 .row {
   display: flex;
 }
 
-.container {
-  width: 960px;
-  margin: 20px;
+#container {
+  width: 600px;
+  height: 600px;
+  margin-top: 20px;
+}
+
+button {
+  color: white;
+  background-color: #EA5160;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  color: black;
+  background-color: #e8ea51;
 }
